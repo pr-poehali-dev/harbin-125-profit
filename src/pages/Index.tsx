@@ -9,7 +9,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-amber-50/30 to-background">
+    <div className="min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white">
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-secondary flex items-center gap-2">
