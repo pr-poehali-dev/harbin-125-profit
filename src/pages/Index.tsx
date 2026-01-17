@@ -26,16 +26,17 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[700px] flex items-center bg-white">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[700px] flex items-center">
         <div 
-          className="absolute inset-0 bg-no-repeat opacity-90"
+          className="absolute inset-0 bg-no-repeat"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-1-1-8k-11__56485.jpeg)',
             backgroundPosition: 'right center',
             backgroundSize: '60%',
           }}
-        ></div>
-        <div className="absolute inset-0 bg-white/70"></div>
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 via-30% to-transparent"></div>
+        </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
