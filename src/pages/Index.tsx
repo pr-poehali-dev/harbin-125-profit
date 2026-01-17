@@ -41,10 +41,10 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
-              Харбин: 125 лет истории
+              Харбин: 125 лет истории из Манчжурии
             </h1>
             <p className="text-xl text-gray-700 mb-8 font-semibold">
-              Известный на 3+ рынках бренд. Легкая логистика.
+              Когда история встречает холод.
             </p>
             <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all">
               Получить прайс Харбина сейчас
