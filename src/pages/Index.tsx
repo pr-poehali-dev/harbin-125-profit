@@ -141,6 +141,16 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <img 
+            src="https://cdn.poehali.dev/files/freepik__imagine-prompt-luxury-3d-product-visualization-har__56486.jpeg" 
+            alt="Харбин: Аромат, История, Вкус, Финиш, Опыт" 
+            className="w-full max-w-5xl mx-auto rounded-2xl shadow-2xl"
+          />
+        </div>
+      </section>
+
       <section id="benefits" className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
