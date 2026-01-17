@@ -151,6 +151,134 @@ export default function Index() {
         </div>
       </section>
 
+      <section id="product-lineup" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl font-heading font-black text-secondary mb-4">
+              🍺 Семейство Harbin
+            </h2>
+            <p className="text-xl text-gray-600 mb-2">
+              Каждое пиво Harbin создано для разных моментов, настроений и вкусов.
+            </p>
+            <p className="text-lg font-semibold text-primary">Выбери своё Harbin.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10 mb-16">
+            {[
+              {
+                id: 'premium',
+                name: 'Harbin Premium',
+                abv: '5%',
+                tagline: 'Флагман',
+                rating: 5,
+                description: 'Многослойный вкус с цветочными нотками и глубокой палитрой. Классическое пиво премиум-класса для ценителей.',
+                notes: ['Солод', 'Цветы', 'Медь', 'Лёгкая карамель'],
+                bestFor: { icon: '🍽️', text: 'Гастрономия, деловой ужин' },
+                colors: { cap: '#FFB800', body: '#2C5F8D', accent: '#FFD700' },
+                delay: '0.1s'
+              },
+              {
+                id: 'ice',
+                name: 'Harbin Ice',
+                abv: '3.6%',
+                tagline: 'Освежение',
+                rating: 4,
+                description: 'Лёгкое и хрустящее пиво с чистым завершением. Идеально для жарких дней и повседневного наслаждения.',
+                notes: ['Чистота', 'Свежесть', 'Лёгкие зерновые', 'Сухой финиш'],
+                bestFor: { icon: '☀️', text: 'Жаркие дни, повседневно' },
+                colors: { cap: '#00BFFF', body: '#1E3A5F', accent: '#87CEEB' },
+                delay: '0.3s'
+              },
+              {
+                id: 'wheat',
+                name: 'Harbin Wheat',
+                abv: '3.6%',
+                tagline: 'Альтернатива',
+                rating: 4,
+                description: 'Гладкое и фруктовое пиво на основе пшеницы. Уникальный вкусовый профиль для летнего наслаждения.',
+                notes: ['Пшеница', 'Банан', 'Цитрус', 'Сливочность'],
+                bestFor: { icon: '🌾', text: 'Лето, релаксация' },
+                colors: { cap: '#DAA520', body: '#8B6914', accent: '#F0E68C' },
+                delay: '0.5s'
+              }
+            ].map((product, i) => (
+              <div 
+                key={product.id} 
+                className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-gray-100 hover:border-primary/30"
+                style={{ animationDelay: product.delay }}
+              >
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-3">
+                    <span className="text-sm font-bold text-primary uppercase tracking-wide">{product.tagline}</span>
+                    <span className="text-sm text-gray-600">• {product.abv}</span>
+                  </div>
+                  <h3 className="text-3xl font-heading font-black text-secondary mb-2">{product.name}</h3>
+                  <div className="flex justify-center gap-1 mb-4">
+                    {[...Array(5)].map((_, starIdx) => (
+                      <span key={starIdx} className={starIdx < product.rating ? 'text-yellow-400 text-xl' : 'text-gray-300 text-xl'}>★</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-6 relative h-48 flex items-center justify-center">
+                  <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
+                    <div 
+                      className="absolute inset-0 rounded-lg shadow-xl"
+                      style={{ backgroundColor: product.colors.body }}
+                    ></div>
+                    <div 
+                      className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full -mt-2"
+                      style={{ backgroundColor: product.colors.cap }}
+                    ></div>
+                    <div 
+                      className="absolute bottom-6 left-1/2 -translate-x-1/2 w-16 h-20 rounded opacity-80"
+                      style={{ backgroundColor: product.colors.accent }}
+                    ></div>
+                  </div>
+                </div>
+
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">{product.description}</p>
+
+                <div className="bg-gray-50 rounded-xl p-4 mb-6">
+                  <h4 className="text-sm font-bold text-secondary mb-3">Профиль вкуса</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {product.notes.map((note, idx) => (
+                      <span key={idx} className="text-xs bg-white px-3 py-1 rounded-full border border-primary/20 text-gray-700">
+                        {note}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 mb-6 p-3 bg-primary/5 rounded-lg">
+                  <span className="text-2xl">{product.bestFor.icon}</span>
+                  <span className="text-sm font-semibold text-gray-700">{product.bestFor.text}</span>
+                </div>
+
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg">
+                  Узнать больше
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-12 text-center text-white shadow-2xl">
+            <h3 className="text-3xl font-heading font-bold mb-4">Готов открыть своё Harbin?</h3>
+            <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
+              Найди ближайший магазин или закажи онлайн с доставкой прямо в твой дом.
+            </p>
+            <Button 
+              onClick={scrollToContact}
+              size="lg" 
+              className="bg-white text-secondary hover:bg-gray-100 text-lg px-8 py-6 shadow-xl"
+            >
+              Найти в магазинах
+              <Icon name="MapPin" size={20} className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section id="benefits" className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
