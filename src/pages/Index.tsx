@@ -87,29 +87,79 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
-            Проблемы дилеров
-          </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">Почему обычное пиво не приносит прибыли</p>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { icon: "🔴", title: "Европейское пиво — слишком дорого", desc: "Маржи 15–20%. Логистика дорогая." },
-              { icon: "🔴", title: "Местные бренды уже везде", desc: "Маржи 10–15%. Нет уникальности." },
-              { icon: "🔴", title: "Цинтао захватила нишу", desc: "Массовое пиво. Везде есть." },
-              { icon: "🔴", title: "Нужно пиво, которое продаётся САМО", desc: "Без дорогой рекламы. С историей." }
-            ].map((problem, i) => (
-              <Card key={i} className="border-2 border-red-200 bg-red-50/50 hover:shadow-lg transition-all">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-xl">
-                    <span className="text-3xl">{problem.icon}</span>
-                    {problem.title}
-                  </CardTitle>
-                  <CardDescription className="text-base text-gray-700">{problem.desc}</CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-secondary mb-4">
+              Вкус холода Манчжурии
+            </h2>
+            <p className="text-lg text-gray-600">Профиль и сочетаемость премиального лагера</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-heading font-bold text-secondary mb-4 flex items-center gap-3">
+                  <span className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl">🍺</span>
+                  Профиль вкуса
+                </h3>
+                <div className="space-y-3 text-gray-700">
+                  <p className="flex items-start gap-2">
+                    <span className="text-primary font-bold">→</span>
+                    <span><strong>Аромат:</strong> Свежий хмель, лёгкие цветочные ноты, чистота северной воды</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="text-primary font-bold">→</span>
+                    <span><strong>Вкус:</strong> Сбалансированная горчинка (4.5% ABV), солодовая сладость, кристальная чистота</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="text-primary font-bold">→</span>
+                    <span><strong>Послевкусие:</strong> Освежающее, длительное, с нотами хмеля и солода</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="text-primary font-bold">→</span>
+                    <span><strong>Температура подачи:</strong> 4-6°C — как в Манчжурии</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
+                <p className="text-secondary font-semibold italic">
+                  "Харбин — это баланс немецкой школы пивоварения и китайской лёгкости. Идеален для жаркого климата и долгих застолий."
+                </p>
+                <p className="text-sm text-gray-600 mt-2">— Master Brewer, AB InBev China</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-heading font-bold text-secondary mb-6 flex items-center gap-3">
+                <span className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl">🥘</span>
+                Идеальные сочетания
+              </h3>
+              <div className="grid gap-4">
+                {[
+                  { emoji: "🍜", title: "Азиатская кухня", desc: "Суши, рамен, dim sum — лёгкая горчинка подчёркивает умами" },
+                  { emoji: "🍖", title: "Мясо на гриле", desc: "Шашлык, стейк, BBQ — освежает и очищает вкус" },
+                  { emoji: "🌶️", title: "Острые блюда", desc: "Сычуаньская кухня, карри — охлаждает остроту" },
+                  { emoji: "🧀", title: "Лёгкие закуски", desc: "Сыры, морепродукты, салаты — универсальное сочетание" },
+                ].map((pairing, i) => (
+                  <div key={i} className="flex items-start gap-4 p-4 bg-green-50/50 rounded-lg border border-primary/20 hover:border-primary/40 transition-all">
+                    <span className="text-3xl flex-shrink-0">{pairing.emoji}</span>
+                    <div>
+                      <h4 className="font-bold text-secondary mb-1">{pairing.title}</h4>
+                      <p className="text-sm text-gray-600">{pairing.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white text-center">
+            <h3 className="text-2xl font-heading font-bold mb-3">Почему клиенты выбирают Харбин снова?</h3>
+            <p className="text-lg text-white/90 max-w-3xl mx-auto">
+              Лёгкость + история + узнаваемость = повторные продажи. Харбин не просто утоляет жажду — он рассказывает историю Манчжурии в каждом глотке.
+            </p>
           </div>
         </div>
       </section>
