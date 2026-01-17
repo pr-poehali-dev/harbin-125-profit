@@ -47,7 +47,7 @@ export default function Index() {
               Когда история встречает холод.
             </p>
             <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all">
-              Получить прайс Харбина сейчас
+              Получить прайс сейчас
               <Icon name="ArrowRight" size={20} className="ml-2" />
             </Button>
           </div>
