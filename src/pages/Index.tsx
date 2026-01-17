@@ -35,32 +35,11 @@ export default function Index() {
                 <span>+60% рост импорта китайского пива в год</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
-                Харбин: 125 лет истории<br />
-                <span className="text-primary">+ 60% прибыли</span>
+                Харбин: 125 лет истории
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Известный на 3+ рынках бренд. Легкая логистика. Готовые маржи 35-45%.
+                Известный на 3+ рынках бренд. Легкая логистика.
               </p>
-              <div className="flex flex-col gap-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">⭐</span>
-                  </div>
-                  <span className="text-base font-semibold text-gray-700">50+ дилеров в РФ</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">📊</span>
-                  </div>
-                  <span className="text-base font-semibold text-gray-700">+60% импорт/год</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <span className="text-base font-semibold text-gray-700">AB InBev гарантия</span>
-                </div>
-              </div>
               <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all w-full md:w-auto">
                 Получить прайс Харбина сейчас
                 <Icon name="ArrowRight" size={20} className="ml-2" />
