@@ -35,7 +35,7 @@ export default function Index() {
             backgroundSize: '65%',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-white/98 via-white/75 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 via-30% to-white/5"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
