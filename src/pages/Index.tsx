@@ -2,8 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Icon from "@/components/ui/icon";
+import { useEffect, useState } from "react";
 
 export default function Index() {
+  const [scrollY, setScrollY] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -67,12 +78,22 @@ export default function Index() {
               </Button>
             </div>
             
-            <div className="relative order-1 md:order-2 animate-scale-in">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
+            <div className="relative order-1 md:order-2">
+              <div 
+                className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl transition-opacity duration-1000"
+                style={{ 
+                  opacity: isVisible ? 1 : 0,
+                  transform: `translateY(${scrollY * 0.1}px)` 
+                }}
+              ></div>
               <img 
                 src="https://cdn.poehali.dev/files/freepik__-1-1-8k-11__56483.jpeg" 
                 alt="Harbin Premium Beer with Dragon"
-                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl transition-all duration-700"
+                style={{ 
+                  opacity: isVisible ? 1 : 0,
+                  transform: `translateY(${isVisible ? 0 : 50}px) translateY(${scrollY * -0.15}px) scale(${1 + (scrollY * 0.00005)})`,
+                }}
               />
             </div>
           </div>
