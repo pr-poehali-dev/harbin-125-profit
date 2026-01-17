@@ -54,18 +54,34 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white shadow-2xl">
-            <div className="flex items-center justify-between mb-6">
-              <span className="text-6xl font-heading font-black">1900</span>
-              <div className="flex-1 mx-8 h-1 bg-white/30 relative">
-                <div className="absolute inset-0 bg-primary h-full w-full"></div>
-              </div>
-              <span className="text-6xl font-heading font-black">2025</span>
+      <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50/30">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-between bg-secondary/10 px-6 py-3 rounded-full mb-8">
+              <span className="text-4xl font-heading font-black text-secondary">1900</span>
+              <div className="mx-6 w-24 h-0.5 bg-primary"></div>
+              <span className="text-4xl font-heading font-black text-secondary">2025</span>
             </div>
-            <p className="text-center text-lg font-semibold">
-              125 лет качественного пива. Первая пивоварня Китая. История, которая продаёт.
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-secondary mb-6">
+              История, которая продаёт
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+            <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-2 first-letter:float-left">
+              На строительстве Транс-Манчжурской железной дороги в 1900 году русские инженеры привезли в город Харбин не только чертежи и рельсы, но и традиции пивоварения. В условиях сурового манчжурского климата, где зимние температуры опускались до −40°C, они основали первую пивоварню Китая. Чистейшая вода из реки Сунгари и немецкий хмель создали уникальный вкус, который полюбили рабочие со всего мира.
+            </p>
+
+            <p>
+              Пивоварня пережила революцию 1917 года, японскую оккупацию и Культурную революцию. Каждый новый владелец сохранял оригинальную рецептуру — немецкие дрожжи, чешский хмель и кристально чистая вода Сунгари. К 1950-м годам Харбин стал символом качества в Северном Китае, а его зелёная бутылка — знаком настоящего лагера.
+            </p>
+
+            <p>
+              В 2004 году AB InBev — крупнейший производитель пива в мире — приобрёл бренд, но оставил всё без изменений: рецепт 1900 года, манчжурское производство, зелёная бутылка. Сегодня Харбин экспортируется в 30+ стран, но его вкус остался таким же, каким был 125 лет назад — свежим, чистым, северным.
+            </p>
+
+            <p className="text-xl font-semibold text-secondary border-l-4 border-primary pl-6 italic">
+              Харбин — это не просто пиво. Это история выживания, традиций и холода Манчжурии в каждой бутылке.
             </p>
           </div>
         </div>
