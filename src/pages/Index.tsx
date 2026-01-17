@@ -40,10 +40,6 @@ export default function Index() {
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold backdrop-blur-sm">
-              <Icon name="TrendingUp" size={16} />
-              <span>+60% рост импорта китайского пива в год</span>
-            </div>
             <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
               Харбин: 125 лет истории
             </h1>
