@@ -26,38 +26,55 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-8 animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
-              <Icon name="TrendingUp" size={16} />
-              <span>+60% рост импорта китайского пива в год</span>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="text-left animate-fade-in order-2 md:order-1">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
+                <Icon name="TrendingUp" size={16} />
+                <span>+60% рост импорта китайского пива в год</span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
+                Харбин: 125 лет истории<br />
+                <span className="text-primary">+ 60% прибыли</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-8">
+                Известный на 3+ рынках бренд. Легкая логистика. Готовые маржи 35-45%.
+              </p>
+              <div className="flex flex-col gap-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">⭐</span>
+                  </div>
+                  <span className="text-base font-semibold text-gray-700">50+ дилеров в РФ</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">📊</span>
+                  </div>
+                  <span className="text-base font-semibold text-gray-700">+60% импорт/год</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <span className="text-base font-semibold text-gray-700">AB InBev гарантия</span>
+                </div>
+              </div>
+              <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all w-full md:w-auto">
+                Получить прайс Харбина сейчас
+                <Icon name="ArrowRight" size={20} className="ml-2" />
+              </Button>
             </div>
-            <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
-              Харбин: 125 лет истории<br />
-              <span className="text-primary">+ 60% прибыли</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Известный на 3+ рынках бренд. Легкая логистика. Готовые маржи 35-45%.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-                <span className="text-2xl">⭐</span>
-                <span className="text-sm font-semibold">50+ дилеров в РФ</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-                <span className="text-2xl">📊</span>
-                <span className="text-sm font-semibold">+60% импорт/год</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-                <span className="text-2xl">✅</span>
-                <span className="text-sm font-semibold">AB InBev гарантия</span>
-              </div>
+            
+            <div className="relative order-1 md:order-2 animate-scale-in">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
+              <img 
+                src="https://cdn.poehali.dev/files/freepik__-1-1-8k-11__56483.jpeg" 
+                alt="Harbin Premium Beer with Dragon"
+                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
+              />
             </div>
-            <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all">
-              Получить прайс Харбина сейчас
-              <Icon name="ArrowRight" size={20} className="ml-2" />
-            </Button>
           </div>
 
           <div className="mt-16 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white shadow-2xl">
