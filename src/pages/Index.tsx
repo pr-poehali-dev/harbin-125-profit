@@ -26,37 +26,39 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="text-left animate-fade-in order-2 md:order-1">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
-                <Icon name="TrendingUp" size={16} />
-                <span>+60% рост импорта китайского пива в год</span>
-              </div>
-              <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
-                Харбин: 125 лет истории
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Известный на 3+ рынках бренд. Легкая логистика.
-              </p>
-              <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all w-full md:w-auto">
-                Получить прайс Харбина сейчас
-                <Icon name="ArrowRight" size={20} className="ml-2" />
-              </Button>
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[600px] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-1-1-8k-11__56485.jpeg)',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/50"></div>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="max-w-2xl animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold backdrop-blur-sm">
+              <Icon name="TrendingUp" size={16} />
+              <span>+60% рост импорта китайского пива в год</span>
             </div>
-            
-            <div className="relative order-1 md:order-2 animate-scale-in">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
-              <img 
-                src="https://cdn.poehali.dev/files/freepik__-1-1-8k-11__56483.jpeg" 
-                alt="Harbin Premium Beer with Dragon"
-                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+            <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
+              Харбин: 125 лет истории
+            </h1>
+            <p className="text-xl text-gray-700 mb-8 font-semibold">
+              Известный на 3+ рынках бренд. Легкая логистика.
+            </p>
+            <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all">
+              Получить прайс Харбина сейчас
+              <Icon name="ArrowRight" size={20} className="ml-2" />
+            </Button>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-16 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white shadow-2xl">
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white shadow-2xl">
             <div className="flex items-center justify-between mb-6">
               <span className="text-6xl font-heading font-black">1900</span>
               <div className="flex-1 mx-8 h-1 bg-white/30 relative">
