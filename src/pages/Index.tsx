@@ -96,7 +96,7 @@ export default function Index() {
             <p className="text-lg text-gray-600">Профиль и сочетаемость премиального лагера</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="max-w-3xl mx-auto mb-16">
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-heading font-bold text-secondary mb-4 flex items-center gap-3">
@@ -128,29 +128,6 @@ export default function Index() {
                   "Харбин — это баланс немецкой школы пивоварения и китайской лёгкости. Идеален для жаркого климата и долгих застолий."
                 </p>
                 <p className="text-sm text-gray-600 mt-2">— Master Brewer, AB InBev China</p>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-heading font-bold text-secondary mb-6 flex items-center gap-3">
-                <span className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl">🥘</span>
-                Идеальные сочетания
-              </h3>
-              <div className="grid gap-4">
-                {[
-                  { emoji: "🍜", title: "Азиатская кухня", desc: "Суши, рамен, dim sum — лёгкая горчинка подчёркивает умами" },
-                  { emoji: "🍖", title: "Мясо на гриле", desc: "Шашлык, стейк, BBQ — освежает и очищает вкус" },
-                  { emoji: "🌶️", title: "Острые блюда", desc: "Сычуаньская кухня, карри — охлаждает остроту" },
-                  { emoji: "🧀", title: "Лёгкие закуски", desc: "Сыры, морепродукты, салаты — универсальное сочетание" },
-                ].map((pairing, i) => (
-                  <div key={i} className="flex items-start gap-4 p-4 bg-green-50/50 rounded-lg border border-primary/20 hover:border-primary/40 transition-all">
-                    <span className="text-3xl flex-shrink-0">{pairing.emoji}</span>
-                    <div>
-                      <h4 className="font-bold text-secondary mb-1">{pairing.title}</h4>
-                      <p className="text-sm text-gray-600">{pairing.desc}</p>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
