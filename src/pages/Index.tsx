@@ -35,7 +35,7 @@ export default function Index() {
             backgroundPosition: '60% center',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/55 via-white/25 to-transparent"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
