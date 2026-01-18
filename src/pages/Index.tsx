@@ -31,7 +31,7 @@ export default function Index() {
           className="absolute inset-0"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__99100.jpeg)',
-            backgroundSize: '110%',
+            backgroundSize: '95%',
             backgroundPosition: '60% center',
           }}
         >
