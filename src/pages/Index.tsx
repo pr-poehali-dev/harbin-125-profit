@@ -30,7 +30,7 @@ export default function Index() {
         <div 
           className="absolute inset-0"
           style={{ 
-            backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__99099.jpeg)',
+            backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__99100.jpeg)',
             backgroundSize: '110%',
             backgroundPosition: '60% center',
           }}
