@@ -263,6 +263,12 @@ export default function Index() {
                       alt="Harbin Wheat bottle"
                       className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
+                  ) : product.id === '1900' ? (
+                    <img 
+                      src="https://cdn.poehali.dev/files/freepik__-__50594.jpeg" 
+                      alt="Harbin 1900 bottle"
+                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                    />
                   ) : (
                     <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
                       <div 
