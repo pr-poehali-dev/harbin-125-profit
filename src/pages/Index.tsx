@@ -231,7 +231,7 @@ export default function Index() {
             ].map((product, i) => (
               <div 
                 key={product.id} 
-                className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-gray-100 hover:border-primary/30"
+                className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-gray-100 hover:border-primary/30 flex flex-col"
                 style={{ animationDelay: product.delay }}
               >
                 <div className="text-center mb-6">
@@ -242,7 +242,7 @@ export default function Index() {
                   <h3 className="text-3xl font-heading font-black text-secondary mb-6">{product.name}</h3>
                 </div>
 
-                <div className="mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center">
+                <div className="mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center flex-shrink-0">
                   {product.id === 'premium' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50590.jpeg" 
@@ -291,25 +291,27 @@ export default function Index() {
                   )}
                 </div>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">{product.description}</p>
+                <div className="flex-grow">
+                  <p className="text-gray-600 text-sm leading-relaxed mb-6">{product.description}</p>
 
-                <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                  <h4 className="text-sm font-bold text-secondary mb-3">Профиль вкуса</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {product.notes.map((note, idx) => (
-                      <span key={idx} className="text-xs bg-white px-3 py-1 rounded-full border border-primary/20 text-gray-700">
-                        {note}
-                      </span>
-                    ))}
+                  <div className="bg-gray-50 rounded-xl p-4 mb-6">
+                    <h4 className="text-sm font-bold text-secondary mb-3">Профиль вкуса</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {product.notes.map((note, idx) => (
+                        <span key={idx} className="text-xs bg-white px-3 py-1 rounded-full border border-primary/20 text-gray-700">
+                          {note}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3 mb-6 p-3 bg-primary/5 rounded-lg">
+                    <span className="text-2xl">{product.bestFor.icon}</span>
+                    <span className="text-sm font-semibold text-gray-700">{product.bestFor.text}</span>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 mb-6 p-3 bg-primary/5 rounded-lg">
-                  <span className="text-2xl">{product.bestFor.icon}</span>
-                  <span className="text-sm font-semibold text-gray-700">{product.bestFor.text}</span>
-                </div>
-
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg">
+                <Button onClick={scrollToContact} className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg mt-auto">
                   Узнать больше
                 </Button>
               </div>
