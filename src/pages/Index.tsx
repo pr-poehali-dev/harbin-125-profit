@@ -48,9 +48,8 @@ export default function Index() {
           className="absolute inset-0"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__99100.jpeg)',
-            backgroundSize: '80%',
+            backgroundSize: 'cover',
             backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent md:from-white/55 md:via-white/25"></div>
