@@ -53,7 +53,7 @@ export default function Index() {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent md:from-white/55 md:via-white/25"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
