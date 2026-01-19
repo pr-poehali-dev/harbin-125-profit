@@ -377,7 +377,7 @@ export default function Index() {
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4">
             Преимущества работы с нами
           </h2>
-          <p className="text-center text-white/80 mb-12 text-lg">Почему выбирают Харбин</p>
+          <p className="text-center text-white/80 mb-12 text-lg">Почему выбирают ООО "ВостокЭко"</p>
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { name: "Вадим П. (METRO)", quote: "+280 продаж/месяц" },
