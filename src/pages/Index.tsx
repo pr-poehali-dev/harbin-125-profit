@@ -54,6 +54,7 @@ export default function Index() {
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/80 via-20% to-transparent to-60%"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white/60"></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
