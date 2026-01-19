@@ -10,6 +10,13 @@ export default function Index() {
   const [showUnderage, setShowUnderage] = useState(false);
 
   useEffect(() => {
+    const ageConfirmed = localStorage.getItem('ageConfirmed');
+    if (ageConfirmed === 'true') {
+      setIsAdult(true);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -24,6 +31,7 @@ export default function Index() {
   const handleAgeConfirm = (isOver18: boolean) => {
     if (isOver18) {
       setIsAdult(true);
+      localStorage.setItem('ageConfirmed', 'true');
     } else {
       setShowUnderage(true);
     }
