@@ -430,7 +430,7 @@ export default function Index() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8">
             <div>
               <img 
-                src="https://cdn.poehali.dev/files/freepik__-harbin-__50597.jpeg" 
+                src="https://cdn.poehali.dev/files/freepik__-harbin-__50597.png" 
                 alt="Харбин" 
                 className="h-16 w-auto mb-4"
               />
