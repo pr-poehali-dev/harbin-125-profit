@@ -399,37 +399,6 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="logistics" className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
-            Как это работает
-          </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">Прозрачные условия поставки</p>
-          <Card className="border-2 border-primary shadow-2xl">
-            <CardContent className="p-0">
-              <div className="divide-y divide-gray-200">
-                {[
-                  { param: "Минимум", value: "От 100 коробок", icon: "Package" },
-                  { param: "Доставка", value: "7–10 дней", icon: "Truck" },
-                  { param: "Включено", value: "В прайс", icon: "CheckCircle" },
-                  { param: "Маржа", value: "35–45%", icon: "TrendingUp" },
-                  { param: "Платёж", value: "50% авансом, 50% при получении", icon: "CreditCard" },
-                  { param: "Поддержка", value: "Маркетинг, консультации, POS", icon: "Users" }
-                ].map((row, i) => (
-                  <div key={i} className="flex items-center justify-between p-6 hover:bg-primary/5 transition-colors">
-                    <div className="flex items-center gap-4">
-                      <Icon name={row.icon as any} size={24} className="text-primary" />
-                      <span className="font-bold text-lg text-gray-700">{row.param}</span>
-                    </div>
-                    <span className="text-xl font-semibold text-secondary">{row.value}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       <section id="faq" className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
