@@ -14,9 +14,9 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <img 
-              src="https://cdn.poehali.dev/files/freepik__-harbin-__50597.jpg" 
+              src="https://cdn.poehali.dev/files/freepik__-__50598.jpeg" 
               alt="Харбин" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           <div className="hidden md:flex gap-6 items-center">
