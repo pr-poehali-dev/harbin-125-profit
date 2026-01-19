@@ -236,44 +236,39 @@ export default function Index() {
                     <span className="text-sm font-bold text-primary uppercase tracking-wide">{product.tagline}</span>
                     <span className="text-sm text-gray-600">• {product.abv}</span>
                   </div>
-                  <h3 className="text-3xl font-heading font-black text-secondary mb-2">{product.name}</h3>
-                  <div className="flex justify-center gap-1 mb-4">
-                    {[...Array(5)].map((_, starIdx) => (
-                      <span key={starIdx} className={starIdx < product.rating ? 'text-yellow-400 text-xl' : 'text-gray-300 text-xl'}>★</span>
-                    ))}
-                  </div>
+                  <h3 className="text-3xl font-heading font-black text-secondary mb-6">{product.name}</h3>
                 </div>
 
-                <div className="mb-6 relative h-48 flex items-center justify-center">
+                <div className="mb-6 relative h-64 flex items-center justify-center">
                   {product.id === 'premium' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50590.jpeg" 
                       alt="Harbin Premium bottle"
-                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'ice' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50591.jpeg" 
                       alt="Harbin Ice bottle"
-                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'wheat' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50593.jpeg" 
                       alt="Harbin Wheat bottle"
-                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === '1900' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50594.jpeg" 
                       alt="Harbin 1900 bottle"
-                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'super' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50595.jpeg" 
                       alt="Harbin Super bottle"
-                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
                     <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
