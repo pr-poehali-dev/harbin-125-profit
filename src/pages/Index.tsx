@@ -18,7 +18,6 @@ export default function Index() {
           <div className="hidden md:flex gap-6 items-center">
             <a href="#benefits" className="text-sm font-semibold hover:text-primary transition-colors">Преимущества</a>
             <a href="#advantages" className="text-sm font-semibold hover:text-primary transition-colors">Почему мы?</a>
-            <a href="#faq" className="text-sm font-semibold hover:text-primary transition-colors">FAQ</a>
             <Button onClick={scrollToContact} size="sm" className="bg-primary hover:bg-primary/90 text-white">
               Связаться
             </Button>
@@ -395,32 +394,6 @@ export default function Index() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="faq" className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
-            Частые вопросы
-          </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">Ответы на ваши сомнения</p>
-          <Accordion type="single" collapsible className="space-y-4">
-            {[
-              { q: "Не слишком ли дорого для розницы?", a: "Маржа 35–45% vs 20%. Клиенты покупают повторно благодаря бренду." },
-              { q: "Как конкурирует с Цинтао?", a: "Tsingtao — массовое. Харбин — премиальное. Разные полки." },
-              { q: "Если не продам первый заказ?", a: "Маржи прибыльны даже при медленной продаже. Back Rack = +20%." },
-              { q: "Гарантии качества?", a: "AB InBev владелец. Сертификация China Famous. 124 года опыта." }
-            ].map((item, i) => (
-              <AccordionItem key={i} value={`item-${i}`} className="bg-white border-2 border-gray-200 rounded-lg px-6">
-                <AccordionTrigger className="text-lg font-bold text-secondary hover:text-primary">
-                  {item.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-700 text-base leading-relaxed">
-                  {item.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
         </div>
       </section>
 
