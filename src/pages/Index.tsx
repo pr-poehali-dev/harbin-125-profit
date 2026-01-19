@@ -16,7 +16,7 @@ export default function Index() {
             <img 
               src="https://cdn.poehali.dev/files/freepik__-__50598.jpeg" 
               alt="Харбин" 
-              className="h-14 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           <div className="hidden md:flex gap-6 items-center">
