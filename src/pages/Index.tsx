@@ -25,24 +25,24 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[700px] flex items-center">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[500px] md:min-h-[700px] flex items-center">
         <div 
           className="absolute inset-0"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__99100.jpeg)',
-            backgroundSize: '100%',
-            backgroundPosition: '60% center',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-white/55 via-white/25 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent md:from-white/55 md:via-white/25"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-heading font-black text-secondary mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-black text-secondary mb-4 md:mb-6 leading-tight">
               Харбин: 125 лет истории из Манчжурии
             </h1>
-            <p className="text-xl text-gray-700 mb-8 font-semibold">
+            <p className="text-lg sm:text-xl text-gray-700 mb-6 md:mb-8 font-semibold">
               Когда история встречает холод.
             </p>
             <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all">
@@ -144,7 +144,7 @@ export default function Index() {
           <img 
             src="https://cdn.poehali.dev/files/freepik__imagine-prompt-luxury-3d-product-visualization-har__56486.jpeg" 
             alt="Харбин: Аромат, История, Вкус, Финиш, Опыт" 
-            className="w-full max-w-5xl mx-auto rounded-2xl shadow-2xl"
+            className="w-full max-w-5xl mx-auto rounded-2xl shadow-2xl object-contain"
           />
         </div>
       </section>
@@ -161,7 +161,7 @@ export default function Index() {
             <p className="text-lg font-semibold text-primary">Выбери своё Harbin.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10 mb-16">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-16">
             {[
               {
                 id: 'premium',
@@ -237,36 +237,36 @@ export default function Index() {
                   <h3 className="text-3xl font-heading font-black text-secondary mb-6">{product.name}</h3>
                 </div>
 
-                <div className="mb-6 relative h-64 flex items-center justify-center">
+                <div className="mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center">
                   {product.id === 'premium' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50590.jpeg" 
                       alt="Harbin Premium bottle"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'ice' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50591.jpeg" 
                       alt="Harbin Ice bottle"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'wheat' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50593.jpeg" 
                       alt="Harbin Wheat bottle"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === '1900' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50594.jpeg" 
                       alt="Harbin 1900 bottle"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'super' ? (
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50595.jpeg" 
                       alt="Harbin Super bottle"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
                     <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
@@ -426,7 +426,7 @@ export default function Index() {
 
       <footer className="bg-secondary text-white py-12 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8">
             <div>
               <h3 className="text-2xl font-heading font-bold mb-4 flex items-center gap-2">
                 🍺 Харбин
@@ -449,8 +449,8 @@ export default function Index() {
                   <span>@Natalia_ms</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Icon name="MapPin" size={16} className="mt-1" />
-                  <span>690080, г. Владивосток, ул. Фадеева 49 лит 1</span>
+                  <Icon name="MapPin" size={16} className="mt-1 flex-shrink-0" />
+                  <span className="text-sm">690080, г. Владивосток, ул. Фадеева 49 лит 1</span>
                 </div>
               </div>
             </div>
