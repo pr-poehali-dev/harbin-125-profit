@@ -334,15 +334,15 @@ export default function Index() {
           <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-12 text-center text-white shadow-2xl">
             <h3 className="text-3xl font-heading font-bold mb-4">Готов открыть своё Harbin?</h3>
             <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
-              Найди ближайший магазин или закажи онлайн с доставкой прямо в твой дом.
+              Присоединяйся к команде профессионалов
             </p>
             <Button 
               onClick={scrollToContact}
               size="lg" 
               className="bg-white text-secondary hover:bg-gray-100 text-lg px-8 py-6 shadow-xl"
             >
-              Найти в магазинах
-              <Icon name="MapPin" size={20} className="ml-2" />
+              Связаться
+              <Icon name="Mail" size={20} className="ml-2" />
             </Button>
           </div>
         </div>
