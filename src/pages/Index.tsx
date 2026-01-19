@@ -420,7 +420,7 @@ export default function Index() {
       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-secondary to-secondary/80 text-white">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-black mb-6">
-            Готовы к 50+ дилерам?
+            Стань партнёром в своем регионе
           </h2>
           <p className="text-xl mb-8 text-white/90">
             Получите прайс и условия за 10 минут. Без обязательств.
