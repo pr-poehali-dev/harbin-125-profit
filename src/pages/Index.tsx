@@ -13,7 +13,7 @@ export default function Index() {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-secondary flex items-center gap-2">
-            🍺 <span className="font-heading">Харбин</span>
+            <span className="font-heading">Харбин</span>
           </div>
           <div className="hidden md:flex gap-6 items-center">
             <a href="#benefits" className="text-sm font-semibold hover:text-primary transition-colors">Преимущества</a>
