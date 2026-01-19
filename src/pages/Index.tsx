@@ -45,16 +45,14 @@ export default function Index() {
 
       <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[500px] md:min-h-[800px] flex items-center">
         <div 
-          className="absolute inset-0"
+          className="absolute inset-0 opacity-80"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__50600.jpeg)',
             backgroundSize: 'contain',
             backgroundPosition: 'right center',
             backgroundRepeat: 'no-repeat',
           }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent from-0% via-white/30 via-60% to-white to-100%"></div>
-        </div>
+        ></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
