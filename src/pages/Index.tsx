@@ -429,9 +429,11 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-heading font-bold mb-4 flex items-center gap-2">
-                🍺 Харбин
-              </h3>
+              <img 
+                src="https://cdn.poehali.dev/files/freepik__-harbin-__50597.jpeg" 
+                alt="Харбин" 
+                className="h-16 w-auto mb-4"
+              />
               <p className="text-white/70">125 лет качественного пива из Китая</p>
             </div>
             <div>
