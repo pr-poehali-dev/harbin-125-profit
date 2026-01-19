@@ -430,9 +430,9 @@ export default function Index() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8">
             <div>
               <img 
-                src="https://cdn.poehali.dev/files/freepik__-harbin-__50597.png" 
+                src="https://cdn.poehali.dev/files/freepik__-__50598.jpeg" 
                 alt="Харбин" 
-                className="h-16 w-auto mb-4"
+                className="h-20 w-auto mb-4"
               />
               <p className="text-white/70">125 лет качественного пива из Китая</p>
             </div>
