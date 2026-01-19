@@ -45,12 +45,13 @@ export default function Index() {
 
       <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[500px] md:min-h-[800px] flex items-center">
         <div 
-          className="absolute inset-0 opacity-95"
+          className="absolute inset-0"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__50600.jpeg)',
             backgroundSize: 'contain',
             backgroundPosition: 'right center',
             backgroundRepeat: 'no-repeat',
+            filter: 'contrast(1.1) saturate(1.1)',
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/80 via-20% to-transparent to-60%"></div>
