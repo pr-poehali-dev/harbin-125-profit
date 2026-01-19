@@ -453,33 +453,6 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-12 text-secondary">
-            Бонусы для дилеров
-          </h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              { icon: "🎁", title: "POS-материалы", desc: "Плакаты, стойки, наклейки", cond: "От 500 коробок" },
-              { icon: "🎁", title: "Маркетинг-набор", desc: "Фото для Instagram, Telegram", cond: "От 500 коробок" },
-              { icon: "🎁", title: "Консультация", desc: "Оптимизация полки", cond: "Бесплатно" },
-              { icon: "🎁", title: "Поддержка", desc: "Еженедельные звонки", cond: "3 месяца" }
-            ].map((bonus, i) => (
-              <Card key={i} className="text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-primary/20">
-                <CardHeader>
-                  <div className="text-5xl mb-3">{bonus.icon}</div>
-                  <CardTitle className="text-xl font-heading mb-2">{bonus.title}</CardTitle>
-                  <CardDescription className="text-base">{bonus.desc}</CardDescription>
-                  <div className="mt-4 inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
-                    {bonus.cond}
-                  </div>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-secondary to-secondary/80 text-white">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-black mb-6">
