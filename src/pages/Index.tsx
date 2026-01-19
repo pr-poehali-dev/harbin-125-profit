@@ -378,17 +378,20 @@ export default function Index() {
             Преимущества работы с нами
           </h2>
           <p className="text-center text-white/80 mb-12 text-lg">Почему выбирают ООО "ВостокЭко"</p>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-4 gap-8">
             {[
-              { name: "Нам доверяют", quote: "Более 15 лет импортируем пиво из Китая." },
-              { name: "Объем поставок", quote: "за 2025 год - более 2 млн литров пива" },
-              { name: "Доставка", quote: "Отправка по всей России" },
-              { name: "Цены", quote: "Лучшая цена на импортное пиво" }
+              { name: "Нам доверяют", quote: "Более 15 лет импортируем пиво из Китая.", icon: "Award" },
+              { name: "Объем поставок", quote: "за 2025 год - более 2 млн литров пива", icon: "TrendingUp" },
+              { name: "Доставка", quote: "Отправка по всей России", icon: "Truck" },
+              { name: "Цены", quote: "Лучшая цена на импортное пиво", icon: "DollarSign" }
             ].map((testimonial, i) => (
-              <Card key={i} className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all">
-                <CardHeader>
-                  <CardTitle className="text-lg font-heading">{testimonial.name}</CardTitle>
-                  <CardDescription className="text-primary text-xl font-bold mt-2">{testimonial.quote}</CardDescription>
+              <Card key={i} className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-primary/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <CardHeader className="pb-4">
+                  <div className="flex justify-center mb-4">
+                    <Icon name={testimonial.icon as any} size={56} className="text-primary" />
+                  </div>
+                  <CardTitle className="text-xl font-heading text-center">{testimonial.name}</CardTitle>
+                  <CardDescription className="text-white text-lg font-semibold mt-3 text-center leading-relaxed">{testimonial.quote}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
