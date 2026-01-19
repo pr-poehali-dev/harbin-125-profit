@@ -12,8 +12,12 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white">
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-secondary flex items-center gap-2">
-            <span className="font-heading">Харбин</span>
+          <div className="flex items-center">
+            <img 
+              src="https://cdn.poehali.dev/files/freepik__-harbin-__50597.jpg" 
+              alt="Харбин" 
+              className="h-8 w-auto"
+            />
           </div>
           <div className="hidden md:flex gap-6 items-center">
             <a href="#product-lineup" className="text-sm font-semibold hover:text-primary transition-colors">Продукция</a>
