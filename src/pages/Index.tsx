@@ -9,12 +9,7 @@ export default function Index() {
   const [isAdult, setIsAdult] = useState<boolean | null>(null);
   const [showUnderage, setShowUnderage] = useState(false);
 
-  useEffect(() => {
-    const ageConfirmed = sessionStorage.getItem('ageConfirmed');
-    if (ageConfirmed === 'true') {
-      setIsAdult(true);
-    }
-  }, []);
+
 
   useEffect(() => {
     const handleScroll = () => {
