@@ -83,7 +83,6 @@ export default function Index() {
         </div>
       )}
 
-    <div className="min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white">
       <header className={`fixed top-0 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/60' : 'bg-white/95'
       }`}>
