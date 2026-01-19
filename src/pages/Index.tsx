@@ -16,8 +16,8 @@ export default function Index() {
             <span className="font-heading">Харбин</span>
           </div>
           <div className="hidden md:flex gap-6 items-center">
-            <a href="#benefits" className="text-sm font-semibold hover:text-primary transition-colors">Преимущества</a>
             <a href="#product-lineup" className="text-sm font-semibold hover:text-primary transition-colors">Продукция</a>
+            <a href="#benefits" className="text-sm font-semibold hover:text-primary transition-colors">Преимущества</a>
             <a href="#advantages" className="text-sm font-semibold hover:text-primary transition-colors">Почему мы?</a>
             <Button onClick={scrollToContact} size="sm" className="bg-primary hover:bg-primary/90 text-white">
               Связаться
