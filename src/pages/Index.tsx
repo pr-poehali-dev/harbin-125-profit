@@ -53,9 +53,7 @@ export default function Index() {
             backgroundRepeat: 'no-repeat',
           }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/50 via-30% to-transparent to-60%"></div>
-        <div className="absolute top-0 left-0 w-1/2 h-1/3 bg-gradient-to-br from-white via-white/70 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-1/2 h-1/3 bg-gradient-to-tr from-white via-white/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent" style={{ width: '40%' }}></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
