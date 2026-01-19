@@ -35,9 +35,9 @@ export default function Index() {
   };
 
   return (
-    <div className={`min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white ${isAdult === null ? 'blur-xl' : ''}`}>
+    <>
       {isAdult === null && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50">
           <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 text-center">
             <h2 className="text-3xl font-heading font-black text-secondary mb-4">
               Вам есть 18 лет?
@@ -67,7 +67,7 @@ export default function Index() {
       )}
 
       {showUnderage && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50">
           <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 text-center">
             <Icon name="ShieldAlert" size={64} className="mx-auto mb-4 text-destructive" />
             <h2 className="text-2xl font-heading font-black text-secondary mb-4">
@@ -79,6 +79,8 @@ export default function Index() {
           </div>
         </div>
       )}
+
+    <div className={`min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white ${isAdult === null ? 'blur-xl' : ''}`}>
 
       <header className={`fixed top-0 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/60' : 'bg-white/95'
@@ -555,5 +557,6 @@ export default function Index() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
