@@ -380,15 +380,15 @@ export default function Index() {
           <p className="text-center text-white/80 mb-12 text-lg">Почему выбирают ООО "ВостокЭко"</p>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { name: "Вадим П. (METRO)", quote: "+280 продаж/месяц" },
-              { name: "Анна М. (WineStyle)", quote: "Лучший хит 2025" },
-              { name: "Иван К. (Владивосток)", quote: "Маржи 40%" },
-              { name: "AB InBev РФ", quote: "+50% повторных заказов за 3 месяца" }
+              { name: "Нам доверяют", quote: "Более 15 лет импортируем пиво из Китая." },
+              { name: "Объем поставок", quote: "за 2025 год - более 2 млн литров пива" },
+              { name: "Доставка", quote: "Отправка по всей России" },
+              { name: "Цены", quote: "Лучшая цена на импортное пиво" }
             ].map((testimonial, i) => (
               <Card key={i} className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all">
                 <CardHeader>
                   <CardTitle className="text-lg font-heading">{testimonial.name}</CardTitle>
-                  <CardDescription className="text-primary text-xl font-bold mt-2">"{testimonial.quote}"</CardDescription>
+                  <CardDescription className="text-primary text-xl font-bold mt-2">{testimonial.quote}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
