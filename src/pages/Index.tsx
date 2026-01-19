@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 
 export default function Index() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAdult, setIsAdult] = useState<boolean | null>(null);
+  const [showUnderage, setShowUnderage] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +21,60 @@ export default function Index() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleAgeConfirm = (isOver18: boolean) => {
+    if (isOver18) {
+      setIsAdult(true);
+    } else {
+      setShowUnderage(true);
+    }
+  };
+
   return (
+    <div className={`min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white ${isAdult === null ? 'blur-xl' : ''}`}>
+      {isAdult === null && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 text-center">
+            <h2 className="text-3xl font-heading font-black text-secondary mb-4">
+              Вам есть 18 лет?
+            </h2>
+            <p className="text-gray-600 mb-8">
+              Данный сайт содержит информацию об алкогольной продукции
+            </p>
+            <div className="flex gap-4 justify-center">
+              <Button 
+                onClick={() => handleAgeConfirm(true)}
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-white px-12"
+              >
+                Да
+              </Button>
+              <Button 
+                onClick={() => handleAgeConfirm(false)}
+                size="lg"
+                variant="outline"
+                className="px-12"
+              >
+                Нет
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showUnderage && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 text-center">
+            <Icon name="ShieldAlert" size={64} className="mx-auto mb-4 text-destructive" />
+            <h2 className="text-2xl font-heading font-black text-secondary mb-4">
+              Доступ ограничен
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Приходите, когда станете совершеннолетним!
+            </p>
+          </div>
+        </div>
+      )}
+
     <div className="min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white">
       <header className={`fixed top-0 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/60' : 'bg-white/95'
