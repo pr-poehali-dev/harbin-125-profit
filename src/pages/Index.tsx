@@ -99,8 +99,7 @@ export default function Index() {
           <div className="max-w-3xl mx-auto mb-16">
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-heading font-bold text-secondary mb-4 flex items-center gap-3">
-                  <span className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl">🍺</span>
+                <h3 className="text-2xl font-heading font-bold text-secondary mb-4">
                   Профиль вкуса
                 </h3>
                 <div className="space-y-3 text-gray-700">
@@ -155,7 +154,7 @@ export default function Index() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl md:text-6xl font-heading font-black text-secondary mb-4">
-              🍺 Семейство Harbin
+              Семейство Harbin
             </h2>
             <p className="text-xl text-gray-600 mb-2">
               Каждое пиво Harbin создано для разных моментов, настроений и вкусов.
