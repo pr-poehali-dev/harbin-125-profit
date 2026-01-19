@@ -464,7 +464,10 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-white/20 pt-6 text-center text-white/60">
-            © 2025 Harbin Beer Russia
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <span className="bg-red-600 text-white font-bold px-3 py-1 rounded text-sm">18+</span>
+            </div>
+            <p className="text-sm">Минздрав предупреждает: чрезмерное употребление алкоголя вредит вашему здоровью.</p>
           </div>
         </div>
       </footer>
