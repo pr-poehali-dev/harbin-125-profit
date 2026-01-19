@@ -221,20 +221,28 @@ export default function Index() {
                 </div>
 
                 <div className="mb-6 relative h-48 flex items-center justify-center">
-                  <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
-                    <div 
-                      className="absolute inset-0 rounded-lg shadow-xl"
-                      style={{ backgroundColor: product.colors.body }}
-                    ></div>
-                    <div 
-                      className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full -mt-2"
-                      style={{ backgroundColor: product.colors.cap }}
-                    ></div>
-                    <div 
-                      className="absolute bottom-6 left-1/2 -translate-x-1/2 w-16 h-20 rounded opacity-80"
-                      style={{ backgroundColor: product.colors.accent }}
-                    ></div>
-                  </div>
+                  {product.id === 'premium' ? (
+                    <img 
+                      src="https://cdn.poehali.dev/files/freepik__-__50590.jpeg" 
+                      alt="Harbin Premium bottle"
+                      className="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
+                      <div 
+                        className="absolute inset-0 rounded-lg shadow-xl"
+                        style={{ backgroundColor: product.colors.body }}
+                      ></div>
+                      <div 
+                        className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full -mt-2"
+                        style={{ backgroundColor: product.colors.cap }}
+                      ></div>
+                      <div 
+                        className="absolute bottom-6 left-1/2 -translate-x-1/2 w-16 h-20 rounded opacity-80"
+                        style={{ backgroundColor: product.colors.accent }}
+                      ></div>
+                    </div>
+                  )}
                 </div>
 
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">{product.description}</p>
