@@ -375,9 +375,9 @@ export default function Index() {
       <section className="py-16 px-4 bg-secondary text-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4">
-            Уже работает в России
+            Преимущества работы с нами
           </h2>
-          <p className="text-center text-white/80 mb-12 text-lg">Отзывы реальных дилеров</p>
+          <p className="text-center text-white/80 mb-12 text-lg">Почему выбирают Харбин</p>
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { name: "Вадим П. (METRO)", quote: "+280 продаж/месяц" },
