@@ -17,7 +17,7 @@ export default function Index() {
           </div>
           <div className="hidden md:flex gap-6 items-center">
             <a href="#benefits" className="text-sm font-semibold hover:text-primary transition-colors">Преимущества</a>
-            <a href="#logistics" className="text-sm font-semibold hover:text-primary transition-colors">Логистика</a>
+            <a href="#advantages" className="text-sm font-semibold hover:text-primary transition-colors">Почему мы?</a>
             <a href="#faq" className="text-sm font-semibold hover:text-primary transition-colors">FAQ</a>
             <Button onClick={scrollToContact} size="sm" className="bg-primary hover:bg-primary/90 text-white">
               Связаться
@@ -372,7 +372,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-secondary text-white">
+      <section id="advantages" className="py-16 px-4 bg-secondary text-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4">
             Преимущества работы с нами
