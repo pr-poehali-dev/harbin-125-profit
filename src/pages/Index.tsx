@@ -43,13 +43,14 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[500px] md:min-h-[700px] flex items-center">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[500px] md:min-h-[800px] flex items-center">
         <div 
           className="absolute inset-0"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/freepik__-__99100.jpeg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center',
+            backgroundSize: 'contain',
+            backgroundPosition: 'right center',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent md:from-white/55 md:via-white/25"></div>
