@@ -10,7 +10,7 @@ export default function Index() {
   const [showUnderage, setShowUnderage] = useState(false);
 
   useEffect(() => {
-    const ageConfirmed = localStorage.getItem('ageConfirmed');
+    const ageConfirmed = sessionStorage.getItem('ageConfirmed');
     if (ageConfirmed === 'true') {
       setIsAdult(true);
     }
@@ -31,7 +31,7 @@ export default function Index() {
   const handleAgeConfirm = (isOver18: boolean) => {
     if (isOver18) {
       setIsAdult(true);
-      localStorage.setItem('ageConfirmed', 'true');
+      sessionStorage.setItem('ageConfirmed', 'true');
     } else {
       setShowUnderage(true);
     }
