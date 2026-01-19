@@ -438,15 +438,19 @@ export default function Index() {
               <div className="space-y-2 text-white/80">
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  <span>+7 (921) XXX-XX-XX</span>
+                  <span>+7 (999) 0-586-630</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Mail" size={16} />
-                  <span>sales@harbin-russia.ru</span>
+                  <span>dvbalt-keg@mail.ru</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Icon name="MessageCircle" size={16} />
-                  <span>@harbin_diler</span>
+                  <Icon name="Send" size={16} />
+                  <span>@Natalia_ms</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="MapPin" size={16} className="mt-1" />
+                  <span>690080, г. Владивосток, ул. Фадеева 49 лит 1</span>
                 </div>
               </div>
             </div>
