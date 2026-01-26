@@ -214,7 +214,7 @@ export default function Index() {
           <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white text-center">
             <h3 className="text-2xl font-heading font-bold mb-3">Почему клиенты выбирают Харбин снова?</h3>
             <p className="text-lg text-white/90 max-w-3xl mx-auto">
-              Лёгкость + история + узнаваемость = повторные продажи. Харбин не просто утоляет жажду — он рассказывает историю Китая в каждом глотке.
+              Лёгкость + история + узнаваемость = повторные продажи. Харбин не просто утоляет жажду — он рассказывает историю Манчжурии в каждом глотке.
             </p>
           </div>
         </div>
