@@ -121,7 +121,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-black text-secondary mb-4 md:mb-6 leading-tight">
-              Харбин: 125 лет истории из Манчжурии
+              Харбин: 125 лет истории из Китая
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 mb-6 md:mb-8 font-semibold">
               Когда история встречает холод.
