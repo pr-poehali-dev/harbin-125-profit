@@ -509,7 +509,7 @@ export default function Index() {
 
       <footer className="bg-secondary text-white py-12 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-8 mb-8">
             <div>
               <img 
                 src="https://cdn.poehali.dev/files/freepik__-__50598.jpeg" 
@@ -537,14 +537,6 @@ export default function Index() {
                   <Icon name="MapPin" size={16} className="mt-1 flex-shrink-0" />
                   <span className="text-sm">690080, г. Владивосток, ул. Фадеева 49 лит 1</span>
                 </div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-lg">Гарантии</h4>
-              <div className="space-y-2 text-white/80">
-                <div>✅ ISO сертификат</div>
-                <div>🛡️ AB InBev защита</div>
-                <div>🔒 Безопасность</div>
               </div>
             </div>
           </div>
