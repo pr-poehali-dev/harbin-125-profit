@@ -488,28 +488,17 @@ export default function Index() {
           <p className="text-xl mb-8 text-white/90">
             Получите прайс и условия за 10 минут. Без обязательств.
           </p>
-          <div className="space-y-6 mb-10">
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                "✅ Прайс за 10 мин",
-                "✅ Без обязательств",
-                "✅ На русском"
-              ].map((trust, i) => (
-                <div key={i} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg font-semibold">
-                  {trust}
-                </div>
-              ))}
-            </div>
-            <div className="flex items-center justify-center gap-4 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-lg max-w-2xl mx-auto">
-              <img 
-                src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/86c18488-eb96-4692-96bb-e0310af24dee.png" 
-                alt="Честный знак" 
-                className="w-16 h-16 flex-shrink-0"
-              />
-              <p className="text-left font-semibold text-white/90">
-                Продукция защищена системой маркировки "Честный знак", что подтверждает её подлинность и качество
-              </p>
-            </div>
+          <div className="flex flex-wrap justify-center gap-4 mb-10">
+            {[
+              "✅ Прайс за 10 мин",
+              "✅ Без обязательств",
+              "✅ На русском",
+              "✅ Документы готовы"
+            ].map((trust, i) => (
+              <div key={i} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg font-semibold">
+                {trust}
+              </div>
+            ))}
           </div>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-10 py-6 shadow-2xl">
             Получить прайс и условия
