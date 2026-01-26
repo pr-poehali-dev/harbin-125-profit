@@ -429,7 +429,7 @@ export default function Index() {
                 icon: "🏆",
                 title: "Качество гарантировано",
                 points: ["✓ AB InBev — владелец", "✓ Немецкие дрожжи и хмель", "✓ Сертификация China Famous", "✓ Продукция защищена системой маркировки Честный знак"],
-                footer: "124 года опыта"
+                footer: "125 лет опыта"
               }
             ].map((pillar, i) => (
               <Card key={i} className="border-2 border-primary hover:shadow-2xl transition-all hover:-translate-y-2 bg-gradient-to-br from-white to-primary/5">
