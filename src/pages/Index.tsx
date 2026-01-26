@@ -493,7 +493,7 @@ export default function Index() {
               "✅ Прайс за 10 мин",
               "✅ Без обязательств",
               "✅ На русском",
-              "✅ Документы готовы"
+              "✅ Продукция защищена системой маркировки Честный знак"
             ].map((trust, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg font-semibold">
                 {trust}
