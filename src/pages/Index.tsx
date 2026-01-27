@@ -459,10 +459,10 @@ export default function Index() {
             Преимущества работы с нами
           </h2>
           <p className="text-center text-white/80 mb-12 text-lg">Почему выбирают ООО "ВостокЭко"</p>
-          <div className="grid md:grid-cols-4 gap-8">
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             {[
               { name: "Нам доверяют", quote: "Более 15 лет импортируем пиво из Китая.", icon: "Award" },
-              { name: "Объем поставок", quote: "В 2025 году мы продали 27,6 млн бутылок «Харбина»\n· Этой цепочкой можно дважды соединить Москву и Владивосток.\n· Этого объема хватило бы, чтобы каждый болельщик на «Лужниках» выпил по 340 банок.\n· Мы обеспечили годовую норму пива для населения целого города-миллионника.", icon: "TrendingUp" },
               { name: "Доставка", quote: "Отправка по всей России", icon: "Truck" },
               { name: "Цены", quote: "Лучшая цена на импортное пиво", icon: "DollarSign" }
             ].map((testimonial, i) => (
@@ -477,6 +477,21 @@ export default function Index() {
               </Card>
             ))}
           </div>
+
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-primary/30 hover:shadow-2xl transition-all duration-300">
+            <CardHeader className="pb-6">
+              <div className="flex justify-center mb-4">
+                <Icon name="TrendingUp" size={56} className="text-primary" />
+              </div>
+              <CardTitle className="text-2xl font-heading text-center mb-4">Объем поставок</CardTitle>
+              <CardDescription className="text-white text-lg font-semibold text-center leading-relaxed whitespace-pre-line">
+                В 2025 году мы продали 27,6 млн бутылок «Харбина»
+                · Этой цепочкой можно дважды соединить Москву и Владивосток.
+                · Этого объема хватило бы, чтобы каждый болельщик на «Лужниках» выпил по 340 банок.
+                · Мы обеспечили годовую норму пива для населения целого города-миллионника.
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </div>
       </section>
 
