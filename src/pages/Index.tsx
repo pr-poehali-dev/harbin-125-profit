@@ -483,7 +483,7 @@ export default function Index() {
               <div className="flex justify-center mb-4">
                 <Icon name="TrendingUp" size={56} className="text-primary" />
               </div>
-              <CardTitle className="text-2xl font-heading text-center mb-4">Объем поставок</CardTitle>
+              <CardTitle className="text-2xl font-heading text-center mb-4 drop-shadow-lg">Объем поставок</CardTitle>
               <CardDescription className="text-white text-lg font-semibold text-center leading-relaxed whitespace-pre-line">
                 В 2025 году мы продали 27,6 млн бутылок «Харбина». Этой цепочкой можно дважды соединить Москву и Владивосток. Этого объема хватило бы, чтобы каждый болельщик на «Лужниках» выпил по 340 банок. Мы обеспечили годовую норму пива для населения целого города-миллионника.
               </CardDescription>
