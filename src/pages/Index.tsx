@@ -220,11 +220,11 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-black">
         <div className="container mx-auto max-w-6xl">
           <img 
-            src="https://cdn.poehali.dev/files/freepik__imagine-prompt-luxury-3d-product-visualization-har__56486.jpeg" 
-            alt="Харбин: Аромат, История, Вкус, Финиш, Опыт" 
+            src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/4a921aa1-3e68-40e8-bba7-2b2cdda439c1.jpeg" 
+            alt="Harbin Super - Аромат, История, Вкус, Опыт, Финиш" 
             className="w-full max-w-5xl mx-auto rounded-2xl shadow-2xl object-contain"
           />
         </div>
