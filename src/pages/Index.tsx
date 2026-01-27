@@ -5,14 +5,8 @@ import Icon from "@/components/ui/icon";
 import { useEffect, useState } from "react";
 import useEmblaCarousel from 'embla-carousel-react';
 
-const PremiumCarousel = () => {
+const ProductCarousel = ({ images, productName }: { images: string[], productName: string }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-
-  const images = [
-    "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
-    "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/9c7a5ed7-3797-48b2-a28d-b55656dbc096.jpg",
-    "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/bf115b9c-1fb7-461f-8249-3ce142ceb927.jpeg"
-  ];
 
   const scrollPrev = () => emblaApi?.scrollPrev();
   const scrollNext = () => emblaApi?.scrollNext();
@@ -25,7 +19,7 @@ const PremiumCarousel = () => {
             <div key={index} className="flex-[0_0_100%] min-w-0">
               <img 
                 src={src} 
-                alt={`Harbin Premium ${index + 1}`}
+                alt={`${productName} ${index + 1}`}
                 className="h-44 sm:h-52 md:h-56 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
               />
             </div>
@@ -364,12 +358,21 @@ export default function Index() {
 
                 <div className="mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center flex-shrink-0">
                   {product.id === 'premium' ? (
-                    <PremiumCarousel />
+                    <ProductCarousel 
+                      images={[
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/9c7a5ed7-3797-48b2-a28d-b55656dbc096.jpg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/bf115b9c-1fb7-461f-8249-3ce142ceb927.jpeg"
+                      ]}
+                      productName="Harbin Premium"
+                    />
                   ) : product.id === 'ice' ? (
-                    <img 
-                      src="https://cdn.poehali.dev/files/freepik__-__50591.jpeg" 
-                      alt="Harbin Ice bottle"
-                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                    <ProductCarousel 
+                      images={[
+                        "https://cdn.poehali.dev/files/freepik__-__50591.jpeg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/29af132e-4635-410d-9ea9-4db22b18621b.png"
+                      ]}
+                      productName="Harbin Ice"
                     />
                   ) : product.id === 'wheat' ? (
                     <img 
