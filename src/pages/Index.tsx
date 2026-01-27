@@ -6,26 +6,43 @@ import { useEffect, useState } from "react";
 import useEmblaCarousel from 'embla-carousel-react';
 
 const PremiumCarousel = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const images = [
     "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
     "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/9c7a5ed7-3797-48b2-a28d-b55656dbc096.jpg"
   ];
 
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+
   return (
-    <div className="overflow-hidden" ref={emblaRef}>
-      <div className="flex">
-        {images.map((src, index) => (
-          <div key={index} className="flex-[0_0_100%] min-w-0">
-            <img 
-              src={src} 
-              alt={`Harbin Premium ${index + 1}`}
-              className="h-44 sm:h-52 md:h-56 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-        ))}
+    <div className="relative">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex">
+          {images.map((src, index) => (
+            <div key={index} className="flex-[0_0_100%] min-w-0">
+              <img 
+                src={src} 
+                alt={`Harbin Premium ${index + 1}`}
+                className="h-44 sm:h-52 md:h-56 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
+      <button 
+        onClick={scrollPrev}
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all z-10"
+      >
+        <Icon name="ChevronLeft" size={20} className="text-secondary" />
+      </button>
+      <button 
+        onClick={scrollNext}
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all z-10"
+      >
+        <Icon name="ChevronRight" size={20} className="text-secondary" />
+      </button>
     </div>
   );
 };
