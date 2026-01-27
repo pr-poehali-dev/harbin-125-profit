@@ -478,7 +478,7 @@ export default function Index() {
             ))}
           </div>
 
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-primary/30 hover:shadow-2xl transition-all duration-300">
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-primary/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
             <CardHeader className="pb-6">
               <div className="flex justify-center mb-4">
                 <Icon name="TrendingUp" size={56} className="text-primary" />
