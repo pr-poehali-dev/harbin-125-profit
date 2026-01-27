@@ -453,6 +453,23 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-black">
+        <div className="container mx-auto max-w-6xl">
+          <div className="mb-8 text-center">
+            <p className="text-xl md:text-2xl text-white/90 font-semibold">
+              Лёгкость + история + узнаваемость = повторные продажи. Харбин не просто утоляет жажду — он рассказывает историю Манчжурии в каждом глотке.
+            </p>
+          </div>
+          <div className="rounded-xl overflow-hidden">
+            <img 
+              src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/7cbe3bb8-c1c7-4577-82fb-2abc380afe15.jpeg" 
+              alt="Harbin Super - Аромат, История, Вкус, Опыт, Финиш" 
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       <section id="advantages" className="py-16 px-4 bg-secondary text-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4">
