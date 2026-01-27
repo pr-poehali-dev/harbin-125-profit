@@ -10,7 +10,8 @@ const PremiumCarousel = () => {
 
   const images = [
     "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
-    "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/9c7a5ed7-3797-48b2-a28d-b55656dbc096.jpg"
+    "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/9c7a5ed7-3797-48b2-a28d-b55656dbc096.jpg",
+    "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/bf115b9c-1fb7-461f-8249-3ce142ceb927.jpeg"
   ];
 
   const scrollPrev = () => emblaApi?.scrollPrev();
