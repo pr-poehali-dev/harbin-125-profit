@@ -471,7 +471,7 @@ export default function Index() {
                   <div className="flex justify-center mb-4">
                     <Icon name={testimonial.icon as any} size={56} className="text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-heading text-center">{testimonial.name}</CardTitle>
+                  <CardTitle className="text-2xl font-heading text-center drop-shadow-lg">{testimonial.name}</CardTitle>
                   <CardDescription className="text-white text-lg font-semibold mt-3 text-center leading-relaxed">{testimonial.quote}</CardDescription>
                 </CardHeader>
               </Card>
