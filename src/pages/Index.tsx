@@ -220,7 +220,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-black">
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <img 
             src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/4a921aa1-3e68-40e8-bba7-2b2cdda439c1.jpeg" 
