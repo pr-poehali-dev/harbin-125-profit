@@ -58,7 +58,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const isFormValid = formData.name && formData.phone && formData.email && formData.city && formData.consent;
+  const isFormValid = formData.name && formData.phone && formData.city && formData.consent;
 
   if (isSuccess) {
     return (
@@ -120,14 +120,13 @@ export default function ContactForm({ onClose }: ContactFormProps) {
 
           <div>
             <Label htmlFor="email" className="text-secondary font-medium">
-              Эл. почта <span className="text-accent">*</span>
+              Эл. почта
             </Label>
             <Input
               id="email"
               type="email"
               value={formData.email}
               onChange={(e) => handleChange('email', e.target.value)}
-              required
               className="mt-1.5"
               placeholder="example@mail.ru"
             />
