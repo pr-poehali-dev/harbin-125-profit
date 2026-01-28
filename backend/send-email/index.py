@@ -41,14 +41,14 @@ def handler(event: dict, context) -> dict:
         email = body.get('email', '')
         city = body.get('city', '')
         
-        if not all([name, phone, email, city]):
+        if not all([name, phone, city]):
             return {
                 'statusCode': 400,
                 'headers': {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*'
                 },
-                'body': json.dumps({'error': 'Все поля обязательны для заполнения'}),
+                'body': json.dumps({'error': 'Обязательные поля: имя, телефон, город'}),
                 'isBase64Encoded': False
             }
         
