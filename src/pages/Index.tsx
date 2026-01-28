@@ -365,7 +365,7 @@ export default function Index() {
                     <span className="text-sm font-bold text-primary uppercase tracking-wide">{product.tagline}</span>
                     <span className="text-sm text-gray-600">• {product.abv}</span>
                   </div>
-                  <h3 className="text-3xl font-heading font-black text-secondary mb-6">{product.name}</h3>
+                  <h3 className="text-2xl font-heading font-black text-secondary mb-6 h-14 flex items-center justify-center">{product.name}</h3>
                 </div>
 
                 <div className="mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center flex-shrink-0">
