@@ -375,10 +375,12 @@ export default function Index() {
                       productName="Harbin Ice"
                     />
                   ) : product.id === 'wheat' ? (
-                    <img 
-                      src="https://cdn.poehali.dev/files/freepik__-__50593.jpeg" 
-                      alt="Harbin Wheat bottle"
-                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                    <ProductCarousel 
+                      images={[
+                        "https://cdn.poehali.dev/files/freepik__-__50593.jpeg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/f0d942dd-79d5-4912-b3cb-c6106f2f7f83.jpeg"
+                      ]}
+                      productName="Harbin Wheat"
                     />
                   ) : product.id === '1900' ? (
                     <img 
