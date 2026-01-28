@@ -334,7 +334,7 @@ export default function Index() {
               },
               {
                 id: 'wheat',
-                name: 'Harbin Wheat King',
+                name: 'Harbin Wheat',
                 abv: '3.6%',
                 tagline: 'Альтернатива',
                 rating: 4,
@@ -346,7 +346,7 @@ export default function Index() {
               },
               {
                 id: 'maidao',
-                name: 'Harbin Maidao',
+                name: 'Harbin Fresh',
                 abv: '4.3%',
                 tagline: 'Горная свежесть',
                 rating: 5,
