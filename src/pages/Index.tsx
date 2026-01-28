@@ -20,7 +20,7 @@ const ProductCarousel = ({ images, productName }: { images: string[], productNam
               <img 
                 src={src} 
                 alt={`${productName} ${index + 1}`}
-                className="h-44 sm:h-52 md:h-56 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                className="h-56 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
               />
             </div>
           ))}
@@ -368,7 +368,7 @@ export default function Index() {
                   <h3 className="text-2xl font-heading font-black text-secondary mb-6 h-14 flex items-center justify-center">{product.name}</h3>
                 </div>
 
-                <div className="mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center flex-shrink-0">
+                <div className="mb-6 relative h-64 flex items-center justify-center flex-shrink-0 bg-white rounded-xl p-4">
                   {product.id === 'premium' ? (
                     <ProductCarousel 
                       images={[
@@ -398,7 +398,7 @@ export default function Index() {
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50594.jpeg" 
                       alt="Harbin 1900 bottle"
-                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'super' ? (
                     <ProductCarousel 
@@ -412,7 +412,7 @@ export default function Index() {
                     <img 
                       src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/77b49965-0fe1-4852-b36c-fa0834f0bf3f.jpeg" 
                       alt="Harbin Maidao can"
-                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
                     <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
