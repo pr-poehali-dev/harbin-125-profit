@@ -125,13 +125,18 @@ export default function Index() {
       <header className={`fixed top-0 w-full backdrop-blur-sm shadow-sm z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/60' : 'bg-white/95'
       }`}>
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
             <img 
               src="https://cdn.poehali.dev/files/freepik__-__50598.jpeg" 
               alt="Харбин" 
-              className="h-12 w-auto"
+              className="h-10 sm:h-12 w-auto"
             />
+          </div>
+          <div className="flex md:hidden">
+            <Button onClick={scrollToContact} size="sm" className="bg-primary hover:bg-primary/90 text-white text-xs px-3">
+              Связаться
+            </Button>
           </div>
           <div className="hidden md:flex gap-6 items-center">
             <a href="#product-lineup" className="text-sm font-semibold hover:text-primary transition-colors">Продукция</a>
@@ -144,7 +149,7 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden min-h-[500px] md:min-h-[800px] flex items-center">
+      <section className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 relative overflow-hidden min-h-[450px] sm:min-h-[500px] md:min-h-[800px] flex items-center">
         <div 
           className="absolute inset-0"
           style={{ 
@@ -155,18 +160,18 @@ export default function Index() {
             filter: 'contrast(1.1) saturate(1.1)',
           }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/80 via-20% to-transparent to-60%"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/90 via-30% sm:via-white/80 sm:via-20% to-transparent to-70% sm:to-60%"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white/60"></div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-2xl animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-black text-secondary mb-4 md:mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-black text-secondary mb-3 sm:mb-4 md:mb-6 leading-tight">
               Харбин: 125 лет истории из Китая
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 mb-6 md:mb-8 font-semibold">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-4 sm:mb-6 md:mb-8 font-semibold">
               Когда история встречает холод.
             </p>
-            <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all">
+            <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 shadow-xl hover:shadow-2xl transition-all w-full sm:w-auto">
               Получить прайс сейчас
               <Icon name="ArrowRight" size={20} className="ml-2" />
             </Button>
@@ -174,21 +179,21 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50/30">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b from-white to-green-50/30">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-between bg-secondary/10 px-6 py-3 rounded-full mb-8">
-              <span className="text-4xl font-heading font-black text-secondary">1900</span>
-              <div className="mx-6 w-24 h-0.5 bg-primary"></div>
-              <span className="text-4xl font-heading font-black text-secondary">2025</span>
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <div className="inline-flex items-center justify-between bg-secondary/10 px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8">
+              <span className="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-secondary">1900</span>
+              <div className="mx-3 sm:mx-4 md:mx-6 w-16 sm:w-20 md:w-24 h-0.5 bg-primary"></div>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-secondary">2025</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-secondary mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-secondary mb-4 sm:mb-6 px-4">
               История, которая продаёт
             </h2>
           </div>
 
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-            <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-2 first-letter:float-left">
+          <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-gray-700">
+            <p className="first-letter:text-4xl sm:first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-2 first-letter:float-left">
               На строительстве Транс-Манчжурской железной дороги в 1900 году русские инженеры привезли в город Харбин не только чертежи и рельсы, но и традиции пивоварения. В условиях сурового манчжурского климата, где зимние температуры опускались до −40°C, они основали первую пивоварню Китая. Чистейшая вода из реки Сунгари и немецкий хмель создали уникальный вкус, который полюбили рабочие со всего мира.
             </p>
 
@@ -200,29 +205,29 @@ export default function Index() {
               В 2004 году AB InBev — крупнейший производитель пива в мире — приобрёл бренд, но оставил всё без изменений: рецепт 1900 года, манчжурское производство, зелёная бутылка. Сегодня Харбин экспортируется в 30+ стран, но его вкус остался таким же, каким был 125 лет назад — свежим, чистым, северным.
             </p>
 
-            <p className="text-xl font-semibold text-secondary border-l-4 border-primary pl-6 italic">
+            <p className="text-lg sm:text-xl font-semibold text-secondary border-l-4 border-primary pl-4 sm:pl-6 italic">
               Харбин — это не просто пиво. Это история выживания, традиций и холода Манчжурии в каждой бутылке.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-secondary mb-4">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-secondary mb-3 sm:mb-4 px-4">
               Вкус холода Манчжурии
             </h2>
-            <p className="text-lg text-gray-600">Профиль и сочетаемость премиального лагера</p>
+            <p className="text-base sm:text-lg text-gray-600 px-4">Профиль и сочетаемость премиального лагера</p>
           </div>
 
-          <div className="max-w-3xl mx-auto mb-16">
-            <div className="space-y-6">
+          <div className="max-w-3xl mx-auto mb-12 sm:mb-14 md:mb-16">
+            <div className="space-y-5 sm:space-y-6">
               <div>
-                <h3 className="text-2xl font-heading font-bold text-secondary mb-4">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-secondary mb-3 sm:mb-4">
                   Профиль вкуса
                 </h3>
-                <div className="space-y-3 text-gray-700">
+                <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700">
                   <p className="flex items-start gap-2">
                     <span className="text-primary font-bold">→</span>
                     <span><strong>Аромат:</strong> Свежий хмель, лёгкие цветочные ноты, чистота северной воды</span>
@@ -242,18 +247,18 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
-                <p className="text-secondary font-semibold italic">
+              <div className="bg-primary/5 border-l-4 border-primary p-4 sm:p-6 rounded-r-lg">
+                <p className="text-sm sm:text-base text-secondary font-semibold italic">
                   "Харбин — это баланс немецкой школы пивоварения и китайской лёгкости. Идеален для жаркого климата и долгих застолий."
                 </p>
-                <p className="text-sm text-gray-600 mt-2">— Master Brewer, AB InBev China</p>
+                <p className="text-xs sm:text-sm text-gray-600 mt-2">— Master Brewer, AB InBev China</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-8 text-white text-center">
-            <h3 className="text-2xl font-heading font-bold mb-3">Почему клиенты выбирают Харбин снова?</h3>
-            <p className="text-lg text-white/90 max-w-3xl mx-auto">
+          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white text-center">
+            <h3 className="text-xl sm:text-2xl font-heading font-bold mb-2 sm:mb-3 px-2">Почему клиенты выбирают Харбин снова?</h3>
+            <p className="text-base sm:text-lg text-white/90 max-w-3xl mx-auto">
               Лёгкость + история + узнаваемость = повторные продажи. Харбин не просто утоляет жажду — он рассказывает историю Манчжурии в каждом глотке.
             </p>
           </div>
@@ -359,18 +364,18 @@ export default function Index() {
             ].map((product, i) => (
               <div 
                 key={product.id} 
-                className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-gray-100 hover:border-primary/30 flex flex-col"
+                className="group bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 md:hover:-translate-y-3 border-2 border-gray-100 hover:border-primary/30 flex flex-col"
                 style={{ animationDelay: product.delay }}
               >
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-3">
-                    <span className="text-sm font-bold text-primary uppercase tracking-wide">{product.tagline}</span>
-                    <span className="text-sm text-gray-600">• {product.abv}</span>
+                <div className="text-center mb-4 sm:mb-5 md:mb-6">
+                  <div className="inline-flex items-center gap-2 bg-primary/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-2 sm:mb-3">
+                    <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-wide">{product.tagline}</span>
+                    <span className="text-xs sm:text-sm text-gray-600">• {product.abv}</span>
                   </div>
-                  <h3 className="text-2xl font-heading font-black text-secondary mb-6 h-14 flex items-center justify-center">{product.name}</h3>
+                  <h3 className="text-xl sm:text-2xl font-heading font-black text-secondary mb-4 sm:mb-6 min-h-[3rem] sm:h-14 flex items-center justify-center">{product.name}</h3>
                 </div>
 
-                <div className="mb-6 relative h-64 flex items-center justify-center flex-shrink-0 bg-white rounded-xl p-4 overflow-hidden">
+                <div className="mb-4 sm:mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center flex-shrink-0 bg-white rounded-xl p-3 sm:p-4 overflow-hidden">
                   {product.id === 'premium' ? (
                     <ProductCarousel 
                       images={[
@@ -435,41 +440,41 @@ export default function Index() {
                 </div>
 
                 <div className="flex-grow">
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6">{product.description}</p>
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">{product.description}</p>
 
-                  <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                    <h4 className="text-sm font-bold text-secondary mb-3">Профиль вкуса</h4>
-                    <div className="flex flex-wrap gap-2">
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
+                    <h4 className="text-xs sm:text-sm font-bold text-secondary mb-2 sm:mb-3">Профиль вкуса</h4>
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                       {product.notes.map((note, idx) => (
-                        <span key={idx} className="text-xs bg-white px-3 py-1 rounded-full border border-primary/20 text-gray-700">
+                        <span key={idx} className="text-xs bg-white px-2 sm:px-3 py-1 rounded-full border border-primary/20 text-gray-700">
                           {note}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 mb-6 p-3 bg-primary/5 rounded-lg">
-                    <span className="text-2xl">{product.bestFor.icon}</span>
-                    <span className="text-sm font-semibold text-gray-700">{product.bestFor.text}</span>
+                  <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 p-2 sm:p-3 bg-primary/5 rounded-lg">
+                    <span className="text-xl sm:text-2xl">{product.bestFor.icon}</span>
+                    <span className="text-xs sm:text-sm font-semibold text-gray-700">{product.bestFor.text}</span>
                   </div>
                 </div>
 
-                <Button onClick={scrollToContact} className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg mt-auto">
+                <Button onClick={scrollToContact} className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg mt-auto text-sm sm:text-base py-2 sm:py-3">
                   Узнать больше
                 </Button>
               </div>
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl p-12 text-center text-white shadow-2xl">
-            <h3 className="text-3xl font-heading font-bold mb-4">Готов открыть своё Harbin?</h3>
-            <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center text-white shadow-2xl">
+            <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-3 sm:mb-4 px-2">Готов открыть своё Harbin?</h3>
+            <p className="text-base sm:text-lg text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto px-2">
               Присоединяйся к команде профессионалов
             </p>
             <Button 
               onClick={scrollToContact}
               size="lg" 
-              className="bg-white text-secondary hover:bg-gray-100 text-lg px-8 py-6 shadow-xl"
+              className="bg-white text-secondary hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 shadow-xl w-full sm:w-auto"
             >
               Связаться
               <Icon name="Mail" size={20} className="ml-2" />
@@ -478,12 +483,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="benefits" className="py-16 px-4">
+      <section id="benefits" className="py-12 sm:py-14 md:py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-center mb-4 text-secondary">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-center mb-3 sm:mb-4 text-secondary px-4">
             Вот почему дилеры выбирают Харбин
           </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">Два железных преимущества</p>
+          <p className="text-center text-gray-600 mb-8 sm:mb-10 md:mb-12 text-base sm:text-lg px-4">Два железных преимущества</p>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
@@ -559,29 +564,29 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-4 bg-gradient-to-br from-secondary to-secondary/80 text-white">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-br from-secondary to-secondary/80 text-white">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-4 sm:mb-6 px-4">
             Стань партнёром в своем регионе
           </h2>
-          <p className="text-xl mb-8 text-white/90">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90 px-4">
             Получите прайс и условия за 10 минут. Без обязательств.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10 px-4">
             {[
               "✅ Прайс за 10 мин",
               "✅ Без обязательств",
               "✅ На русском",
               "✅ Документы готовы"
             ].map((trust, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg font-semibold">
+              <div key={i} className="bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-semibold text-sm sm:text-base">
                 {trust}
               </div>
             ))}
           </div>
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-white text-lg px-10 py-6 shadow-2xl"
+            className="bg-primary hover:bg-primary/90 text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 shadow-2xl w-full sm:w-auto"
             onClick={() => setShowContactForm(true)}
           >
             Получить прайс и условия
