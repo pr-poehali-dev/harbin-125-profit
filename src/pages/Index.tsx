@@ -229,7 +229,7 @@ export default function Index() {
                   </p>
                   <p className="flex items-start gap-2">
                     <span className="text-primary font-bold">→</span>
-                    <span><strong>Вкус:</strong> Сбалансированная горчинка (4.5% ABV), солодовая сладость, кристальная чистота</span>
+                    <span><strong>Вкус:</strong> Сбалансированная горчинка (с крепостью от 3,3% до 5,5%), солодовая сладость, кристальная чистота</span>
                   </p>
                   <p className="flex items-start gap-2">
                     <span className="text-primary font-bold">→</span>
