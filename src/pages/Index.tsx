@@ -368,7 +368,7 @@ export default function Index() {
                   <h3 className="text-2xl font-heading font-black text-secondary mb-6 h-14 flex items-center justify-center">{product.name}</h3>
                 </div>
 
-                <div className="mb-6 relative h-64 flex items-center justify-center flex-shrink-0 bg-white rounded-xl p-4">
+                <div className="mb-6 relative h-64 flex items-center justify-center flex-shrink-0 bg-white rounded-xl p-4 overflow-hidden">
                   {product.id === 'premium' ? (
                     <ProductCarousel 
                       images={[
