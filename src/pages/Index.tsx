@@ -412,8 +412,8 @@ export default function Index() {
                     />
                   ) : product.id === 'maidao' ? (
                     <img 
-                      src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/77b49965-0fe1-4852-b36c-fa0834f0bf3f.jpeg" 
-                      alt="Harbin Maidao can"
+                      src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/8eeac3b5-1d2d-463e-ae1c-5b94ad2cf982.jpeg" 
+                      alt="Harbin Fresh can"
                       className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
