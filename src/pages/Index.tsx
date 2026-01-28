@@ -405,7 +405,7 @@ export default function Index() {
                   ) : product.id === 'super' ? (
                     <ProductCarousel 
                       images={[
-                        "https://cdn.poehali.dev/files/freepik__-__50595.jpeg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/aa239956-9dd9-4f9d-bb6d-92e430cb5c2c.jpeg",
                         "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/0a40f865-c56e-4e0b-b0c9-1732c41a7fa6.jpeg"
                       ]}
                       productName="Harbin Super"
