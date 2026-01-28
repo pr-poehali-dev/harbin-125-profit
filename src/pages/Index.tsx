@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Icon from "@/components/ui/icon";
 import { useEffect, useState } from "react";
 import useEmblaCarousel from 'embla-carousel-react';
+import ContactForm from '@/components/ContactForm';
 
 const ProductCarousel = ({ images, productName }: { images: string[], productName: string }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -46,6 +47,7 @@ export default function Index() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isAdult, setIsAdult] = useState<boolean | null>(null);
   const [showUnderage, setShowUnderage] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
     console.log('isAdult state:', isAdult);
@@ -577,12 +579,18 @@ export default function Index() {
               </div>
             ))}
           </div>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-10 py-6 shadow-2xl">
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-white text-lg px-10 py-6 shadow-2xl"
+            onClick={() => setShowContactForm(true)}
+          >
             Получить прайс и условия
             <Icon name="Mail" size={20} className="ml-2" />
           </Button>
         </div>
       </section>
+
+      {showContactForm && <ContactForm onClose={() => setShowContactForm(false)} />}
 
       <footer className="bg-secondary text-white py-12 px-4">
         <div className="container mx-auto max-w-6xl">
