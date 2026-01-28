@@ -21,7 +21,7 @@ const ProductCarousel = ({ images, productName }: { images: string[], productNam
               <img 
                 src={src} 
                 alt={`${productName} ${index + 1}`}
-                className="h-56 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                className="h-56 w-auto object-contain mx-auto transition-transform duration-300"
               />
             </div>
           ))}
@@ -400,7 +400,7 @@ export default function Index() {
                     <img 
                       src="https://cdn.poehali.dev/files/freepik__-__50594.jpeg" 
                       alt="Harbin 1900 bottle"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain transition-transform duration-300"
                     />
                   ) : product.id === 'super' ? (
                     <ProductCarousel 
@@ -414,10 +414,10 @@ export default function Index() {
                     <img 
                       src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/8eeac3b5-1d2d-463e-ae1c-5b94ad2cf982.jpeg" 
                       alt="Harbin Fresh can"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="h-56 w-auto object-contain transition-transform duration-300"
                     />
                   ) : (
-                    <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
+                    <div className="relative w-20 h-40 transition-transform duration-300">
                       <div 
                         className="absolute inset-0 rounded-lg shadow-xl"
                         style={{ backgroundColor: product.colors.body }}
