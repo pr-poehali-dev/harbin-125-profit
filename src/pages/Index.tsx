@@ -341,6 +341,18 @@ export default function Index() {
                 bestFor: { icon: '🎉', text: 'Долгие встречи, спорт-бары' },
                 colors: { cap: '#B8860B', body: '#1A237E', accent: '#FFD700' },
                 delay: '0.9s'
+              },
+              {
+                id: 'maidao',
+                name: 'HARBIN MAIDAO',
+                abv: '4.3%',
+                tagline: 'Горная свежесть',
+                rating: 5,
+                description: 'Пиво премиум-класса с горным характером. Яркий дизайн отражает чистоту горных источников и традиционное качество.',
+                notes: ['Горная вода', 'Ячмень', 'Свежесть', 'Сбалансированность'],
+                bestFor: { icon: '⛰️', text: 'Природа, отдых с друзьями' },
+                colors: { cap: '#2E7D32', body: '#1B5E20', accent: '#81C784' },
+                delay: '1.1s'
               }
             ].map((product, i) => (
               <div 
@@ -395,6 +407,12 @@ export default function Index() {
                         "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/0a40f865-c56e-4e0b-b0c9-1732c41a7fa6.jpeg"
                       ]}
                       productName="Harbin Super"
+                    />
+                  ) : product.id === 'maidao' ? (
+                    <img 
+                      src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/77b49965-0fe1-4852-b36c-fa0834f0bf3f.jpeg" 
+                      alt="Harbin Maidao can"
+                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
                     <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
