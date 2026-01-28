@@ -25,15 +25,33 @@ export default function ContactForm({ onClose }: ContactFormProps) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Имитация отправки
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch('https://functions.poehali.dev/d3c741e7-69fa-4d90-91ef-0c58dc13107b', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          city: formData.city,
+        }),
+      });
 
-    setIsSuccess(true);
-    setIsSubmitting(false);
-
-    setTimeout(() => {
-      onClose();
-    }, 2000);
+      if (response.ok) {
+        setIsSuccess(true);
+        setTimeout(() => {
+          onClose();
+        }, 2000);
+      } else {
+        alert('Ошибка отправки заявки. Попробуйте позже.');
+      }
+    } catch (error) {
+      alert('Ошибка отправки заявки. Попробуйте позже.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string | boolean) => {
