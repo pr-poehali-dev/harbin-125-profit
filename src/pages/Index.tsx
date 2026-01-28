@@ -389,10 +389,12 @@ export default function Index() {
                       className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'super' ? (
-                    <img 
-                      src="https://cdn.poehali.dev/files/freepik__-__50595.jpeg" 
-                      alt="Harbin Super bottle"
-                      className="h-44 sm:h-52 md:h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                    <ProductCarousel 
+                      images={[
+                        "https://cdn.poehali.dev/files/freepik__-__50595.jpeg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/0a40f865-c56e-4e0b-b0c9-1732c41a7fa6.jpeg"
+                      ]}
+                      productName="Harbin Super"
                     />
                   ) : (
                     <div className="relative w-20 h-40 group-hover:scale-110 transition-transform duration-300">
