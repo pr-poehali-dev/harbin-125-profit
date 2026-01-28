@@ -403,10 +403,12 @@ export default function Index() {
                       className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : product.id === 'super' ? (
-                    <img 
-                      src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/aa239956-9dd9-4f9d-bb6d-92e430cb5c2c.jpeg" 
-                      alt="Harbin Super can"
-                      className="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                    <ProductCarousel 
+                      images={[
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/aa239956-9dd9-4f9d-bb6d-92e430cb5c2c.jpeg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/601c3321-dcdf-4d7b-ac56-da163f3756f1.jpeg"
+                      ]}
+                      productName="Harbin Super"
                     />
                   ) : product.id === 'maidao' ? (
                     <img 
