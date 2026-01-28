@@ -63,12 +63,13 @@ export default function ContactForm({ onClose }: ContactFormProps) {
   if (isSuccess) {
     return (
       <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-        <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center animate-in fade-in zoom-in duration-300">
-          <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-            <Icon name="Check" size={32} className="text-white" />
+        <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 max-w-md w-full text-center animate-in fade-in zoom-in duration-300">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+            <Icon name="Check" size={28} className="text-white sm:hidden" />
+            <Icon name="Check" size={32} className="text-white hidden sm:block" />
           </div>
-          <h3 className="text-2xl font-heading font-bold text-secondary mb-2">Заявка отправлена!</h3>
-          <p className="text-muted-foreground">Мы свяжемся с вами в ближайшее время</p>
+          <h3 className="text-xl sm:text-2xl font-heading font-bold text-secondary mb-2">Заявка отправлена!</h3>
+          <p className="text-sm sm:text-base text-muted-foreground">Мы свяжемся с вами в ближайшее время</p>
         </div>
       </div>
     );
@@ -76,20 +77,21 @@ export default function ContactForm({ onClose }: ContactFormProps) {
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-      <div className="bg-white rounded-2xl p-6 md:p-8 max-w-md w-full my-8 animate-in fade-in zoom-in duration-300">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-heading font-bold text-secondary">Получить прайс и условия</h2>
+      <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 max-w-md w-full my-8 animate-in fade-in zoom-in duration-300">
+        <div className="flex justify-between items-start mb-5 sm:mb-6">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-heading font-bold text-secondary pr-2">Получить прайс и условия</h2>
           <button
             onClick={onClose}
-            className="text-muted-foreground hover:text-secondary transition-colors"
+            className="text-muted-foreground hover:text-secondary transition-colors flex-shrink-0 -mt-1 -mr-1"
           >
-            <Icon name="X" size={24} />
+            <Icon name="X" size={20} className="sm:hidden" />
+            <Icon name="X" size={24} className="hidden sm:block" />
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
           <div>
-            <Label htmlFor="name" className="text-secondary font-medium">
+            <Label htmlFor="name" className="text-secondary font-medium text-sm sm:text-base">
               Имя <span className="text-accent">*</span>
             </Label>
             <Input
@@ -98,13 +100,13 @@ export default function ContactForm({ onClose }: ContactFormProps) {
               value={formData.name}
               onChange={(e) => handleChange('name', e.target.value)}
               required
-              className="mt-1.5"
+              className="mt-1 sm:mt-1.5 text-base"
               placeholder="Введите ваше имя"
             />
           </div>
 
           <div>
-            <Label htmlFor="phone" className="text-secondary font-medium">
+            <Label htmlFor="phone" className="text-secondary font-medium text-sm sm:text-base">
               Телефон <span className="text-accent">*</span>
             </Label>
             <Input
@@ -113,13 +115,13 @@ export default function ContactForm({ onClose }: ContactFormProps) {
               value={formData.phone}
               onChange={(e) => handleChange('phone', e.target.value)}
               required
-              className="mt-1.5"
+              className="mt-1 sm:mt-1.5 text-base"
               placeholder="+7 (___) ___-__-__"
             />
           </div>
 
           <div>
-            <Label htmlFor="email" className="text-secondary font-medium">
+            <Label htmlFor="email" className="text-secondary font-medium text-sm sm:text-base">
               Эл. почта
             </Label>
             <Input
@@ -127,13 +129,13 @@ export default function ContactForm({ onClose }: ContactFormProps) {
               type="email"
               value={formData.email}
               onChange={(e) => handleChange('email', e.target.value)}
-              className="mt-1.5"
+              className="mt-1 sm:mt-1.5 text-base"
               placeholder="example@mail.ru"
             />
           </div>
 
           <div>
-            <Label htmlFor="city" className="text-secondary font-medium">
+            <Label htmlFor="city" className="text-secondary font-medium text-sm sm:text-base">
               Город <span className="text-accent">*</span>
             </Label>
             <Input
@@ -142,21 +144,22 @@ export default function ContactForm({ onClose }: ContactFormProps) {
               value={formData.city}
               onChange={(e) => handleChange('city', e.target.value)}
               required
-              className="mt-1.5"
+              className="mt-1 sm:mt-1.5 text-base"
               placeholder="Введите ваш город"
             />
           </div>
 
-          <div className="flex items-start space-x-2 pt-2">
+          <div className="flex items-start space-x-2 pt-1 sm:pt-2">
             <Checkbox
               id="consent"
               checked={formData.consent}
               onCheckedChange={(checked) => handleChange('consent', checked as boolean)}
               required
+              className="mt-0.5"
             />
             <Label
               htmlFor="consent"
-              className="text-sm text-muted-foreground leading-tight cursor-pointer"
+              className="text-xs sm:text-sm text-muted-foreground leading-tight cursor-pointer"
             >
               Я согласен на обработку персональных данных в соответствии с{' '}
               <a href="#" className="text-accent hover:underline">
@@ -168,16 +171,18 @@ export default function ContactForm({ onClose }: ContactFormProps) {
           <Button
             type="submit"
             disabled={!isFormValid || isSubmitting}
-            className="w-full mt-6"
+            className="w-full mt-4 sm:mt-6 text-base py-5 sm:py-6"
           >
             {isSubmitting ? (
               <>
-                <Icon name="Loader2" size={20} className="mr-2 animate-spin" />
+                <Icon name="Loader2" size={18} className="mr-2 animate-spin sm:hidden" />
+                <Icon name="Loader2" size={20} className="mr-2 animate-spin hidden sm:block" />
                 Отправка...
               </>
             ) : (
               <>
-                <Icon name="Send" size={20} className="mr-2" />
+                <Icon name="Send" size={18} className="mr-2 sm:hidden" />
+                <Icon name="Send" size={20} className="mr-2 hidden sm:block" />
                 Отправить заявку
               </>
             )}
