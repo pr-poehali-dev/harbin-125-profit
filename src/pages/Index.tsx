@@ -467,7 +467,7 @@ export default function Index() {
           </div>
 
           <div className="bg-gradient-to-r from-secondary to-secondary/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center text-white shadow-2xl">
-            <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-3 sm:mb-4 px-2">Готов открыть своё Harbin?</h3>
+            <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-3 sm:mb-4 px-2">Готов открыть свой Harbin?</h3>
             <p className="text-base sm:text-lg text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto px-2">
               Присоединяйся к команде профессионалов
             </p>
