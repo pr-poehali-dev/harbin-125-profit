@@ -377,13 +377,10 @@ export default function Index() {
 
                 <div className="mb-4 sm:mb-6 relative h-48 sm:h-56 md:h-64 flex items-center justify-center flex-shrink-0 bg-white rounded-xl p-3 sm:p-4 overflow-hidden">
                   {product.id === 'premium' ? (
-                    <ProductCarousel 
-                      images={[
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/250c2446-2d04-445e-b8a3-373589ebfba9.jpeg",
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/bf115b9c-1fb7-461f-8249-3ce142ceb927.jpeg"
-                      ]}
-                      productName="Harbin Premium"
+                    <img 
+                      src="https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/250c2446-2d04-445e-b8a3-373589ebfba9.jpeg" 
+                      alt="Harbin Premium bottle"
+                      className="h-56 w-auto object-contain transition-transform duration-300"
                     />
                   ) : product.id === 'ice' ? (
                     <ProductCarousel 
