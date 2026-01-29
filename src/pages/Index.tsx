@@ -284,7 +284,7 @@ export default function Index() {
             <p className="text-xl text-gray-600 mb-2">
               Каждое пиво Harbin создано для разных моментов, настроений и вкусов.
             </p>
-            <p className="text-lg font-semibold text-primary">Выбери своё Harbin.</p>
+            <p className="text-lg font-semibold text-primary">Выбери свой Harbin.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-16">
