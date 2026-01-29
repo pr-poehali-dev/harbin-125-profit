@@ -379,8 +379,8 @@ export default function Index() {
                   {product.id === 'premium' ? (
                     <ProductCarousel 
                       images={[
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
                         "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/9c7a5ed7-3797-48b2-a28d-b55656dbc096.jpg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/36a0ed88-045e-4898-bd39-2ee45e2342d1.png",
                         "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/bf115b9c-1fb7-461f-8249-3ce142ceb927.jpeg"
                       ]}
                       productName="Harbin Premium"
@@ -388,16 +388,16 @@ export default function Index() {
                   ) : product.id === 'ice' ? (
                     <ProductCarousel 
                       images={[
-                        "https://cdn.poehali.dev/files/freepik__-__50591.jpeg",
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/29af132e-4635-410d-9ea9-4db22b18621b.png"
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/29af132e-4635-410d-9ea9-4db22b18621b.png",
+                        "https://cdn.poehali.dev/files/freepik__-__50591.jpeg"
                       ]}
                       productName="Harbin Ice"
                     />
                   ) : product.id === 'wheat' ? (
                     <ProductCarousel 
                       images={[
-                        "https://cdn.poehali.dev/files/freepik__-__50593.jpeg",
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/f0d942dd-79d5-4912-b3cb-c6106f2f7f83.jpeg"
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/f0d942dd-79d5-4912-b3cb-c6106f2f7f83.jpeg",
+                        "https://cdn.poehali.dev/files/freepik__-__50593.jpeg"
                       ]}
                       productName="Harbin Wheat"
                     />
@@ -410,8 +410,8 @@ export default function Index() {
                   ) : product.id === 'super' ? (
                     <ProductCarousel 
                       images={[
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/aa239956-9dd9-4f9d-bb6d-92e430cb5c2c.jpeg",
-                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/601c3321-dcdf-4d7b-ac56-da163f3756f1.jpeg"
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/601c3321-dcdf-4d7b-ac56-da163f3756f1.jpeg",
+                        "https://cdn.poehali.dev/projects/b4eb96e9-d078-4786-b72b-a3f882f96883/bucket/aa239956-9dd9-4f9d-bb6d-92e430cb5c2c.jpeg"
                       ]}
                       productName="Harbin Super"
                     />
